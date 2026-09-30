@@ -10,7 +10,7 @@ export default function Nav() {
       padding: "1rem",
       fontSize: "0.95rem",
       flexWrap: "wrap",
-      backgroundColor: "#2D6A6B",
+      backgroundColor: "5C4033",
       borderBottom: "1px solid #D4AF37"
     }}>
       {links.map((link) => (
