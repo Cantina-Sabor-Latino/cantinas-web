@@ -29,7 +29,7 @@ export default function MenuBox() {
       <h2 style={{
         fontSize: "2rem",
         color: "#FF8844",
-        fontStyle: "italic",
+        
         marginBottom: "1.5rem",
         fontFamily: "'Poppins', sans-serif",
         textAlign: "center"
@@ -48,7 +48,7 @@ export default function MenuBox() {
           <h3 style={{
             fontSize: "1.5rem",
             color: "#FF8844",
-            fontStyle: "italic",
+            
             marginBottom: "0.8rem",
             fontFamily: "'Poppins', sans-serif"
           }}>

@@ -20,7 +20,7 @@ export default function BranchCard() {
         <h2 style={{
           fontSize: "1.8rem",
           color: "#FF8844",
-          fontStyle: "italic",
+        
           marginBottom: "1rem",
           fontFamily: "'Poppins', sans-serif",
         }}>
@@ -71,7 +71,7 @@ export default function BranchCard() {
         <h2 style={{
           fontSize: "1.8rem",
           color: "#FF8844",
-          fontStyle: "italic",
+          
           marginBottom: "1rem",
           fontFamily: "'Poppins', sans-serif"
         }}>
