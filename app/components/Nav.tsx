@@ -24,7 +24,7 @@ export default function Nav() {
             borderBottom: "1px solid transparent",
             transition: "all 0.3s",
             cursor: "pointer",
-            fontFamily: "'Cormorant Garamond', serif"
+            fontFamily: "'Poppins', sans-serif"
           }}
           onMouseEnter={(e) => {
             e.currentTarget.style.color = "#FF8844";

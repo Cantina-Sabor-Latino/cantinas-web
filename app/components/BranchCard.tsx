@@ -22,7 +22,7 @@ export default function BranchCard() {
           color: "#FF8844",
           fontStyle: "italic",
           marginBottom: "1rem",
-          fontFamily: "'Poppins', sans-serif"
+          fontFamily: "'Poppins', sans-serif",
         }}>
           Cantina Sabor Latino
         </h2>

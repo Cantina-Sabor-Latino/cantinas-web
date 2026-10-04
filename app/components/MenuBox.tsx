@@ -31,7 +31,7 @@ export default function MenuBox() {
         color: "#FF8844",
         fontStyle: "italic",
         marginBottom: "1.5rem",
-        fontFamily: "'Playfair Display', serif",
+        fontFamily: "'Poppins', sans-serif",
         textAlign: "center"
       }}>
         Menú Sabor Latino
