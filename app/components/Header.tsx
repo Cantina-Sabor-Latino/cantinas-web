@@ -18,7 +18,7 @@ export default function Header() {
       <p style={{
         fontSize: "1rem",
         color: "#D4AF37",
-        fontFamily: "'Cormorant Garamond', serif",
+        fontFamily: "'Poppins', sans-serif",
         fontWeight: 300
       }}>
         Sharing stories through food

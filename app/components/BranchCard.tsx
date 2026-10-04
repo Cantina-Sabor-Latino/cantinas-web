@@ -30,7 +30,7 @@ export default function BranchCard() {
           fontSize: "0.95rem",
           color: "#D4AF37",
           marginBottom: "1rem",
-          fontFamily: "'Cormorant Garamond', serif"
+          fontFamily: "'Poppins', sans-serif"
         }}>
           Everyday Latin American cuisine. Find us at markets, bars, and pop-up venues across Melbourne.
         </p>
@@ -46,7 +46,7 @@ export default function BranchCard() {
           marginTop: "1rem",
           cursor: "pointer",
           border: "none",
-          fontFamily: "'Cormorant Garamond', serif",
+          fontFamily: "'Poppins', sans-serif",
           transition: "all 0.3s"
         }}
         onMouseEnter={(e) => {
@@ -73,7 +73,7 @@ export default function BranchCard() {
           color: "#FF8844",
           fontStyle: "italic",
           marginBottom: "1rem",
-          fontFamily: "'Playfair Display', serif"
+          fontFamily: "'Poppins', sans-serif"
         }}>
           Cantina Cebichera
         </h2>
@@ -81,7 +81,7 @@ export default function BranchCard() {
           fontSize: "0.95rem",
           color: "#D4AF37",
           marginBottom: "1rem",
-          fontFamily: "'Cormorant Garamond', serif"
+          fontFamily: "'Poppins', sans-serif"
         }}>
           Curated storytelling dinner series. Each episode is a narrative, a menu, and a moment.
         </p>
@@ -96,7 +96,7 @@ export default function BranchCard() {
             borderRadius: "4px",
             cursor: "pointer",
             border: "none",
-            fontFamily: "'Cormorant Garamond', serif",
+            fontFamily: "'Poppins', sans-serif",
             transition: "all 0.3s"
           }}
           onMouseEnter={(e) => {
@@ -119,7 +119,7 @@ export default function BranchCard() {
             borderRadius: "4px",
             cursor: "pointer",
             border: "none",
-            fontFamily: "'Cormorant Garamond', serif",
+            fontFamily: "'Poppins', sans-serif",
             transition: "all 0.3s"
           }}
           onMouseEnter={(e) => {

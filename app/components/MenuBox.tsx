@@ -50,7 +50,7 @@ export default function MenuBox() {
             color: "#FF8844",
             fontStyle: "italic",
             marginBottom: "0.8rem",
-            fontFamily: "'Playfair Display', serif"
+            fontFamily: "'Poppins', sans-serif"
           }}>
             {section.category}
           </h3>

@@ -29,7 +29,7 @@ export default function Footer() {
         <a href="https://instagram.com/cantina.sabor.latino" style={{
           color: "#FF8844",
           textDecoration: "none",
-          fontFamily: "'Cormorant Garamond', serif",
+          fontFamily: "'Poppins', sans-serif",
           fontSize: "1.1rem"
         }}>
           @cantina.sabor.latino
@@ -37,7 +37,7 @@ export default function Footer() {
         <a href="https://instagram.com/cantina.cebichera" style={{
           color: "#FF8844",
           textDecoration: "none",
-          fontFamily: "'Cormorant Garamond', serif",
+          fontFamily: "'Poppins', sans-serif",
           fontSize: "1.1rem"
         }}>
           @cantina.cebichera
@@ -47,7 +47,7 @@ export default function Footer() {
       <p style={{
         color: "#D4AF37",
         marginBottom: "0.5rem",
-        fontFamily: "'Cormorant Garamond', serif",
+        fontFamily: "'Poppins', sans-serif",
         fontSize: "1.1rem"
       }}>
         📧 hola@cantinas.au
