@@ -5,10 +5,10 @@ export default function BranchCard() {
     <div style={{
       display: "grid",
       gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-      gap: "2rem",
-      margin: "2rem auto",
+      gap: "1rem",
+      margin: "1rem auto",
       maxWidth: "900px",
-      padding: "0 1.5rem"
+      padding: "0 1rem"
     }}>
       {/* Sabor Latino - LEFT */}
       <div style={{
