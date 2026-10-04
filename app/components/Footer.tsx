@@ -13,7 +13,7 @@ export default function Footer() {
       <p style={{
         color: "#D4AF37",
         marginBottom: "1rem",
-        fontFamily: "'Cormorant Garamond', serif",
+        fontFamily: "'Poppins', sans-serif",
         fontSize: "1.2rem"
       }}>
         Follow us:

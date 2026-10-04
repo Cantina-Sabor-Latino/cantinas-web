@@ -11,7 +11,7 @@ export default function Header() {
         color: "#FF8844",
         fontStyle: "italic",
         marginBottom: "0.25rem",
-        fontFamily: "'Playfair Display', serif"
+        fontFamily: "'Poppins', sans-serif"
       }}>
         Cantinas
       </h1>
