@@ -1,63 +1,57 @@
 'use client';
 
+const linkStyle = {
+  color: "#F6B95C",
+  textDecoration: "none",
+  fontFamily: "'Montserrat', sans-serif",
+  fontSize: "1rem",
+} as const;
+
 export default function Footer() {
   return (
     <footer style={{
-      backgroundColor: "#5C4033",
-      borderTop: "2px solid #D4AF37",
+      backgroundColor: "#18504F",
+      borderTop: "2px solid #E9B54E",
       padding: "1.25rem",
       marginTop: "0.5rem",
       textAlign: "center",
-      fontSize: "1.1rem"
     }}>
       <p style={{
-        color: "#D4AF37",
-        marginBottom: "1rem",
-        fontFamily: "'Poppins', sans-serif",
-        fontSize: "1.2rem"
+        color: "#F6D9A8",
+        marginBottom: "0.75rem",
+        fontFamily: "'Montserrat', sans-serif",
+        fontSize: "1.1rem",
       }}>
         Follow us:
       </p>
       <div style={{
         display: "flex",
-        gap: "2rem",
+        gap: "1.5rem",
         justifyContent: "center",
-        marginBottom: "1rem",
         flexWrap: "wrap",
-        fontSize: "1.1rem"
+        marginBottom: "0.75rem",
       }}>
-        <a href="https://instagram.com/cantina.sabor.latino" style={{
-          color: "#FF8844",
-          textDecoration: "none",
-          fontFamily: "'Poppins', sans-serif",
-          fontSize: "1.1rem"
-        }}>
+        <a href="https://instagram.com/cantina.sabor.latino" style={linkStyle}>
           @cantina.sabor.latino
         </a>
-        <a href="https://instagram.com/cantina.cebichera" style={{
-          color: "#FF8844",
-          textDecoration: "none",
-          fontFamily: "'Poppins', sans-serif",
-          fontSize: "1.1rem"
-        }}>
+        <a href="https://instagram.com/cantina.cebichera" style={linkStyle}>
           @cantina.cebichera
         </a>
       </div>
-      
       <p style={{
-        color: "#D4AF37",
+        color: "#F6D9A8",
         marginBottom: "0.5rem",
-        fontFamily: "'Poppins', sans-serif",
-        fontSize: "1.1rem"
+        fontFamily: "'Montserrat', sans-serif",
+        fontSize: "1rem",
       }}>
-        📧 hola@cantinas.au
+        hola@cantinas.au
       </p>
-      
       <p style={{
-        color: "#D4AF37",
-        marginTop: "1.5rem",
-        fontSize: "0.95rem",
-        opacity: 0.8
+        color: "#F6D9A8",
+        marginTop: "0.75rem",
+        fontSize: "0.85rem",
+        opacity: 0.8,
+        fontFamily: "'Montserrat', sans-serif",
       }}>
         © 2026 Cantinas. Sharing stories through food.
       </p>

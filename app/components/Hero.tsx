@@ -25,20 +25,30 @@ const services = [
 const btnStyle = {
   display: "inline-block",
   padding: "0.75rem 1.5rem",
-  backgroundColor: "#FF8844",
-  color: "#5C4033",
+  backgroundColor: "#18504F",
+  color: "#F6B95C",
   textDecoration: "none",
   fontSize: "0.95rem",
   fontWeight: 600,
   borderRadius: "4px",
-  fontFamily: "'Poppins', sans-serif",
+  fontFamily: "'Montserrat', sans-serif",
   transition: "all 0.3s",
 } as const;
 
+const hoverOn = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  e.currentTarget.style.backgroundColor = "#D9481F";
+  e.currentTarget.style.color = "#FFFFFF";
+  e.currentTarget.style.transform = "translateY(-2px)";
+};
+const hoverOff = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  e.currentTarget.style.backgroundColor = "#18504F";
+  e.currentTarget.style.color = "#F6B95C";
+  e.currentTarget.style.transform = "translateY(0)";
+};
+
 export default function Hero() {
   return (
-    <section style={{ backgroundColor: "#5C4033", padding: "1rem" }}>
-      {/* HERO */}
+    <section style={{ backgroundColor: "#FAF3E3", padding: "1rem" }}>
       <div style={{ maxWidth: "900px", margin: "0 auto", textAlign: "center" }}>
         <img
           src="/images/van.jpg"
@@ -47,23 +57,23 @@ export default function Hero() {
             width: "100%",
             height: "auto",
             borderRadius: "8px",
-            border: "2px solid #D4AF37",
+            border: "2px solid #E9B54E",
             display: "block",
           }}
         />
         <h1 style={{
-          fontFamily: "'Poppins', sans-serif",
-          fontWeight: 700,
-          fontSize: "clamp(1.6rem, 5vw, 2.4rem)",
-          color: "#FF8844",
+          fontFamily: "'Lobster', cursive",
+          fontWeight: 400,
+          fontSize: "clamp(1.8rem, 5vw, 2.6rem)",
+          color: "#D9481F",
           margin: "1.25rem 0 0.5rem",
         }}>
           Your event, with Latin flavour
         </h1>
         <p style={{
-          fontFamily: "'Cormorant Garamond', serif",
-          fontSize: "1.1rem",
-          color: "#D4AF37",
+          fontFamily: "'Montserrat', sans-serif",
+          fontSize: "1rem",
+          color: "#3D4D4D",
           margin: "0 0 1.25rem",
         }}>
           End-of-year parties, functions and catering across Melbourne
@@ -73,20 +83,13 @@ export default function Hero() {
           target="_blank"
           rel="noopener noreferrer"
           style={btnStyle}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.backgroundColor = "#D4AF37";
-            e.currentTarget.style.transform = "translateY(-2px)";
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.backgroundColor = "#FF8844";
-            e.currentTarget.style.transform = "translateY(0)";
-          }}
+          onMouseEnter={hoverOn}
+          onMouseLeave={hoverOff}
         >
           Book the van
         </a>
       </div>
 
-      {/* SERVICES */}
       <div style={{
         maxWidth: "900px",
         margin: "1.5rem auto 0",
@@ -96,26 +99,26 @@ export default function Hero() {
       }}>
         {services.map((s) => (
           <div key={s.title} style={{
-            border: "2px solid #D4AF37",
+            border: "2px solid #E9B54E",
             borderRadius: "8px",
             padding: "1.25rem",
-            backgroundColor: "rgba(92, 64, 51, 0.5)",
+            backgroundColor: "#FBF6EA",
             display: "flex",
             flexDirection: "column",
           }}>
             <h2 style={{
-              fontFamily: "'Poppins', sans-serif",
-              fontWeight: 600,
-              fontSize: "1.3rem",
-              color: "#FF8844",
+              fontFamily: "'Lobster', cursive",
+              fontWeight: 400,
+              fontSize: "1.4rem",
+              color: "#D9481F",
               margin: "0 0 0.5rem",
             }}>
               {s.title}
             </h2>
             <p style={{
-              fontFamily: "'Cormorant Garamond', serif",
-              fontSize: "1rem",
-              color: "#D4AF37",
+              fontFamily: "'Montserrat', sans-serif",
+              fontSize: "0.95rem",
+              color: "#1D2B2B",
               margin: "0 0 1rem",
               flexGrow: 1,
             }}>
@@ -126,14 +129,8 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
               style={{ ...btnStyle, textAlign: "center" }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = "#D4AF37";
-                e.currentTarget.style.transform = "translateY(-2px)";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor = "#FF8844";
-                e.currentTarget.style.transform = "translateY(0)";
-              }}
+              onMouseEnter={hoverOn}
+              onMouseLeave={hoverOff}
             >
               Enquire on WhatsApp
             </a>

@@ -1,25 +1,21 @@
 export default function Header() {
   return (
-    <header style={{
-      backgroundColor: "5C4033",
-      borderBottom: "2px solid #D4AF37",
-      padding: "1rem 1.5rem",
-      textAlign: "center"
-    }}>
+    <header style={{ backgroundColor: "#18504F", padding: "1.25rem 1rem", textAlign: "center" }}>
       <h1 style={{
-        fontSize: "2.5rem",
-        color: "#FF8844",
-        fontStyle: "italic",
-        marginBottom: "0.25rem",
-        fontFamily: "'Poppins', sans-serif",
+        fontFamily: "'Lobster', cursive",
+        fontWeight: 400,
+        fontSize: "clamp(2rem, 7vw, 2.8rem)",
+        color: "#F6B95C",
+        margin: 0,
       }}>
         Cantinas
       </h1>
       <p style={{
-        fontSize: "1rem",
-        color: "#D4AF37",
-        fontFamily: "'Poppins', sans-serif",
-        fontWeight: 300
+        fontFamily: "'Montserrat', sans-serif",
+        fontSize: "0.95rem",
+        color: "#F6D9A8",
+        margin: "0.35rem 0 0",
+        letterSpacing: "0.5px",
       }}>
         Sharing stories through food
       </p>

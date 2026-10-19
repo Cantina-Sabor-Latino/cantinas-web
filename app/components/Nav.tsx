@@ -1,38 +1,39 @@
 'use client';
 
-export default function Nav() {
-  const links = ["Home", "Sabor Latino", "Cebichera", "Gallery", "Enquiries"];
+const links = ["Home", "Sabor Latino", "Cebichera", "Gallery", "Enquiries"];
 
+export default function Nav() {
   return (
     <nav style={{
       display: "flex",
-      gap: "2rem",
-      justifyContent: "center",
-      padding: "1rem",
-      fontSize: "0.95rem",
       flexWrap: "wrap",
-      backgroundColor: "#5C4033",
-      borderBottom: "1px solid #D4AF37"
+      justifyContent: "center",
+      gap: "0.5rem 1.5rem",
+      padding: "0.75rem 1rem",
+      backgroundColor: "#18504F",
+      borderBottom: "2px solid #E9B54E",
+      fontFamily: "'Montserrat', sans-serif",
+      fontSize: "0.9rem",
     }}>
       {links.map((link) => (
         <a
           key={link}
           href="#"
           style={{
-            color: "#D4AF37",
+            color: "#F6D9A8",
             textDecoration: "none",
-            borderBottom: "1px solid transparent",
+            fontWeight: 500,
+            padding: "0.25rem",
+            borderBottom: "2px solid transparent",
             transition: "all 0.3s",
-            cursor: "pointer",
-            fontFamily: "'Poppins', sans-serif"
           }}
           onMouseEnter={(e) => {
-            e.currentTarget.style.color = "#FF8844";
-            e.currentTarget.style.borderBottom = "1px solid #FF8844";
+            e.currentTarget.style.color = "#F6B95C";
+            e.currentTarget.style.borderBottom = "2px solid #F6B95C";
           }}
           onMouseLeave={(e) => {
-            e.currentTarget.style.color = "#D4AF37";
-            e.currentTarget.style.borderBottom = "1px solid transparent";
+            e.currentTarget.style.color = "#F6D9A8";
+            e.currentTarget.style.borderBottom = "2px solid transparent";
           }}
         >
           {link}
