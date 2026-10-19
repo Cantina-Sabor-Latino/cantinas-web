@@ -1,6 +1,12 @@
 'use client';
 
-const links = ["Home", "Sabor Latino", "Cebichera", "Gallery", "Enquiries"];
+const links = [
+  { label: "Home", href: "/" },
+  { label: "Sabor Latino", href: "/sabor-latino" },
+  { label: "Cebichera", href: "/cebichera" },
+  { label: "Gallery", href: "#" },
+  { label: "Enquiries", href: "#" },
+];
 
 export default function Nav() {
   return (
@@ -17,8 +23,8 @@ export default function Nav() {
     }}>
       {links.map((link) => (
         <a
-          key={link}
-          href="#"
+          key={link.label}
+          href={link.href}
           style={{
             color: "#F6D9A8",
             textDecoration: "none",
@@ -36,7 +42,7 @@ export default function Nav() {
             e.currentTarget.style.borderBottom = "2px solid transparent";
           }}
         >
-          {link}
+          {link.label}
         </a>
       ))}
     </nav>
