@@ -9,9 +9,9 @@ const linkStyle = {
   fontSize: "1rem",
 } as const;
 
-export default function Footer() {
+export default function Footer() { 
   return (
-    <footer style={{
+    <footer id="contact" style={{
       backgroundColor: "#18504F",
       borderTop: "2px solid #E9B54E",
       padding: "1.25rem",

@@ -1,11 +1,12 @@
 'use client';
 
+import Link from "next/link";
+
 const links = [
   { label: "Home", href: "/" },
   { label: "Sabor Latino", href: "/sabor-latino" },
   { label: "Cebichera", href: "/cebichera" },
-  { label: "Gallery", href: "#" },
-  { label: "Enquiries", href: "#" },
+  { label: "Enquiries", href: "/#contact" },
 ];
 
 export default function Nav() {
@@ -22,7 +23,7 @@ export default function Nav() {
       fontSize: "0.9rem",
     }}>
       {links.map((link) => (
-        <a
+        <Link
           key={link.label}
           href={link.href}
           style={{
@@ -43,7 +44,7 @@ export default function Nav() {
           }}
         >
           {link.label}
-        </a>
+        </Link>
       ))}
     </nav>
   );
