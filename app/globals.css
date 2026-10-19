@@ -15,7 +15,7 @@
 }
 
 html, body {
-  background: var(--teal);
+    background: #FAF3E3;
   color: var(--gold);
   font-family: 'Cormorant Garamond', serif;
   line-height: 1.6;
