@@ -7,10 +7,10 @@ const WA = (msg: string) =>
 
 const photos = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"];
 
-// Completá con los datos del próximo episodio
+// Cuando tengan fecha, venue y tema, cambiar title y text aquí
 const nextEpisode = {
-  title: "Next episode",
-  text: "Fecha, venue y tema del próximo episodio. Lugares limitados.",
+  title: "Next episode coming soon",
+  text: "Our next storytelling dinner is in the works. Seats are limited — join the waitlist to hear first, or follow @cantina.cebichera on Instagram.",
 };
 
 const btnStyle = {
