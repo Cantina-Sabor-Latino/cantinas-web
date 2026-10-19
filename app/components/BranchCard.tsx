@@ -1,5 +1,9 @@
 'use client';
 
+const WA_NUMBER = "61431603800";
+const waLink = (msg: string) =>
+  `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`;
+
 const cardStyle = {
   border: "2px solid #E9B54E",
   padding: "1.5rem",
@@ -15,11 +19,10 @@ const btnStyle = {
   fontSize: "0.95rem",
   fontWeight: 600,
   borderRadius: "4px",
-  cursor: "pointer",
-  border: "none",
-  fontFamily: "'Montserrat', sans-serif",
   textDecoration: "none",
+  fontFamily: "'Montserrat', sans-serif",
   transition: "all 0.3s",
+  textAlign: "center",
 } as const;
 
 const hoverOn = (e: React.MouseEvent<HTMLElement>) => {
@@ -62,9 +65,16 @@ export default function BranchCard() {
         }}>
           Everyday Latin American cuisine. Find us at markets, bars, and pop-up venues across Melbourne.
         </p>
-        <button style={btnStyle} onMouseEnter={hoverOn} onMouseLeave={hoverOff}>
+        <a
+          href={waLink("Hi Daniel, I'd like to order from Cantina Sabor Latino.")}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={btnStyle}
+          onMouseEnter={hoverOn}
+          onMouseLeave={hoverOff}
+        >
           Order via WhatsApp
-        </button>
+        </a>
       </div>
 
       {/* Cebichera - RIGHT */}
@@ -87,12 +97,26 @@ export default function BranchCard() {
           Curated storytelling dinner series. Each episode is a narrative, a menu, and a moment.
         </p>
         <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
-          <button style={btnStyle} onMouseEnter={hoverOn} onMouseLeave={hoverOff}>
+          <a
+            href={waLink("Hi Daniel, when is the next Cantina Cebichera episode?")}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={btnStyle}
+            onMouseEnter={hoverOn}
+            onMouseLeave={hoverOff}
+          >
             Next Episode
-          </button>
-          <button style={btnStyle} onMouseEnter={hoverOn} onMouseLeave={hoverOff}>
+          </a>
+          <a
+            href={waLink("Hi Daniel, I'd like to reserve a seat for Cantina Cebichera.")}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={btnStyle}
+            onMouseEnter={hoverOn}
+            onMouseLeave={hoverOff}
+          >
             Reserve
-          </button>
+          </a>
         </div>
       </div>
     </div>
