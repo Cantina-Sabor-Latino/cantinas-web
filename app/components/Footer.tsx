@@ -1,5 +1,7 @@
 'use client';
 
+const EMAIL = "salcedo.cantina.latina@gmail.com";
+
 const linkStyle = {
   color: "#F6B95C",
   textDecoration: "none",
@@ -38,13 +40,13 @@ export default function Footer() {
           @cantina.cebichera
         </a>
       </div>
-      <p style={{
-        color: "#F6D9A8",
-        marginBottom: "0.5rem",
-        fontFamily: "'Montserrat', sans-serif",
-        fontSize: "1rem",
-      }}>
-        hola@cantinas.au
+      <p style={{ marginBottom: "0.5rem" }}>
+        <a href={`mailto:${EMAIL}`} style={{
+          ...linkStyle,
+          color: "#F6D9A8",
+        }}>
+          {EMAIL}
+        </a>
       </p>
       <p style={{
         color: "#F6D9A8",
