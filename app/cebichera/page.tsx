@@ -67,12 +67,12 @@ export default function CebicheraPage() {
             {nextEpisode.text}
           </p>
           <a
-            href={WA("Hi Daniel, I'd like to reserve a seat for Cantina Cebichera.")}
+                        href={WA("Hi Daniel, please add me to the Cantina Cebichera waitlist.")}
             target="_blank"
             rel="noopener noreferrer"
             style={btnStyle}
           >
-            Reserve
+            Join the waitlist
           </a>
         </section>
 
