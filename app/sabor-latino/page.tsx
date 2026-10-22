@@ -7,28 +7,33 @@ const WA = (msg: string) =>
 
 const photos: string[] = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg"];
 
-const menu = [
+type Item = { name: string; desc: string; price: string; tags?: string[]; contains?: string };
+type Block = { section: string; note?: string; items: Item[] };
+
+const menu: Block[] = [
   {
     section: "Empanadas",
-    note: "w Latíname sauce",
+    note: "Flaky handmade pastry, served with our Latíname sauce — tomato, red chilli, garlic, onion & spices. Mild heat 🌶️",
     items: [
-      { name: "Beef", desc: "ground beef & spices", price: "8" },
-      { name: "Pork", desc: "pulled pork & orange", price: "8" },
-      { name: "Vego", desc: "potato, corn & lentils (gf / vegan)", price: "8" },
+      { name: "Beef", desc: "spiced ground beef", price: "8" },
+      { name: "Pork", desc: "tender pulled pork with a citrus kick of orange", price: "8" },
+      // CONFIRMAR: ¿la masa de la Vego es realmente GF y vegana?
+      { name: "Vego", desc: "potato, sweet corn & lentils", price: "8", tags: ["VG", "GF"] },
     ],
   },
   {
     section: "Tacos",
-    note: "w coleslaw",
+    note: "Soft corn tortillas with fresh coleslaw",
     items: [
-      { name: "Beef", desc: "braised beef", price: "8" },
-      { name: "Pollo", desc: "roasted chicken & mole sauce", price: "8" },
+      { name: "Beef", desc: "tender braised beef", price: "8" },
+      // CONFIRMAR: si el mole lleva almendras o sésamo, agregar: contains: "nuts, sesame"
+      { name: "Pollo", desc: "roast chicken in mole — Mexico's rich, dark sauce of dried chillies, warm spices, onion & dark cocoa", price: "8" },
     ],
   },
   {
     section: "Sanguches",
     items: [
-      { name: "Pan de Pollo", desc: "crispy chicken roll w potato crisps & Parmesan slaw", price: "14" },
+      { name: "Pan de Pollo", desc: "our signature: crispy chicken roll with potato crisps & Parmesan slaw", price: "14" },
     ],
   },
   {
@@ -40,6 +45,17 @@ const menu = [
   },
 ];
 
+const tagStyle = {
+  display: "inline-block",
+  marginLeft: "0.4rem",
+  padding: "0.05rem 0.4rem",
+  fontSize: "0.7rem",
+  fontWeight: 700,
+  borderRadius: "4px",
+  backgroundColor: "#18504F",
+  color: "#FAF3E3",
+  verticalAlign: "middle",
+} as const;
 const btnStyle = {
   display: "inline-block",
   padding: "0.75rem 1.5rem",
@@ -84,6 +100,9 @@ export default function SaborLatinoPage() {
           }}>
             Menu
           </h2>
+          <p style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "0.85rem", color: "#3D4D4D", margin: "-0.5rem 0 1rem" }}>
+            <span style={tagStyle}>VG</span> vegan · <span style={tagStyle}>GF</span> gluten-free · Allergies or dietary needs? Ask us before ordering.
+          </p>
           <div style={{
             display: "grid",
             gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
@@ -120,8 +139,18 @@ export default function SaborLatinoPage() {
                     fontFamily: "'Montserrat', sans-serif",
                     color: "#1D2B2B",
                   }}>
-                    <span><strong>{item.name}:</strong> {item.desc}</span>
-                    <strong style={{ color: "#18504F", whiteSpace: "nowrap" }}>${item.price}</strong>
+                    <span>
+                      <strong>{item.name}:</strong> {item.desc}
+                      {item.tags?.map((t) => (
+                        <span key={t} style={tagStyle}>{t}</span>
+                      ))}
+                      {item.contains && (
+                        <em style={{ display: "block", fontSize: "0.8rem", color: "#3D4D4D" }}>
+                          Contains: {item.contains}
+                        </em>
+                      )}
+                    </span>
+                                        <strong style={{ color: "#18504F", whiteSpace: "nowrap" }}>${item.price}</strong>
                   </div>
                 ))}
               </div>
