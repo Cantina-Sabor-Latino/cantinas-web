@@ -17,7 +17,6 @@ const menu: Block[] = [
     items: [
       { name: "Beef", desc: "flaky pastry filled with spiced ground beef", price: "8" },
       { name: "Pork", desc: "flaky pastry filled with tender pulled pork & a citrus kick of orange", price: "8" },
-      // CONFIRMAR: ¿la Vego es vegana? (masa de maíz + relleno, sin mantequilla ni manteca)
       { name: "Vego", desc: "golden corn masa shell filled with potato, sweet corn & lentils", price: "8", tags: ["VG", "GF"] },
     ],
   },
@@ -26,9 +25,7 @@ const menu: Block[] = [
     note: "Soft corn tortillas with fresh coleslaw",
     items: [
       { name: "Beef", desc: "tender braised beef", price: "8", tags: ["GF"] },
-      // CONFIRMAR: si el mole lleva almendras o sésamo, agregar: contains: "nuts, sesame"
-      { name: "Pollo", desc: "roast chicken in mole — Mexico's rich, dark sauce of dried chillies, warm spices, onion & dark cocoa", price: "8", tags: ["GF"] },
-    ],
+      { name: "Pollo", desc: "roast chicken in mole — Mexico's rich, dark sauce of dried chillies, warm spices, onion & dark cocoa", price: "8", tags: ["GF"], contains: "almonds" },    ],
   },
   {
     section: "Sanguches",
