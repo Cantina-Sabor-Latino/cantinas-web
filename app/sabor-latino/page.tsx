@@ -13,21 +13,21 @@ type Block = { section: string; note?: string; items: Item[] };
 const menu: Block[] = [
   {
     section: "Empanadas",
-    note: "Flaky handmade pastry, served with our Latíname sauce — tomato, red chilli, garlic, onion & spices. Mild heat 🌶️",
+      note: "Handmade and served with our Latíname sauce — tomato, red chilli, garlic, onion & spices. Mild heat 🌶️",
     items: [
-      { name: "Beef", desc: "spiced ground beef", price: "8" },
-      { name: "Pork", desc: "tender pulled pork with a citrus kick of orange", price: "8" },
-      // CONFIRMAR: ¿la masa de la Vego es realmente GF y vegana?
-      { name: "Vego", desc: "potato, sweet corn & lentils", price: "8", tags: ["VG", "GF"] },
+      { name: "Beef", desc: "flaky pastry filled with spiced ground beef", price: "8" },
+      { name: "Pork", desc: "flaky pastry filled with tender pulled pork & a citrus kick of orange", price: "8" },
+      // CONFIRMAR: ¿la Vego es vegana? (masa de maíz + relleno, sin mantequilla ni manteca)
+      { name: "Vego", desc: "golden corn masa shell filled with potato, sweet corn & lentils", price: "8", tags: ["VG", "GF"] },
     ],
   },
   {
     section: "Tacos",
     note: "Soft corn tortillas with fresh coleslaw",
     items: [
-      { name: "Beef", desc: "tender braised beef", price: "8" },
+      { name: "Beef", desc: "tender braised beef", price: "8", tags: ["GF"] },
       // CONFIRMAR: si el mole lleva almendras o sésamo, agregar: contains: "nuts, sesame"
-      { name: "Pollo", desc: "roast chicken in mole — Mexico's rich, dark sauce of dried chillies, warm spices, onion & dark cocoa", price: "8" },
+      { name: "Pollo", desc: "roast chicken in mole — Mexico's rich, dark sauce of dried chillies, warm spices, onion & dark cocoa", price: "8", tags: ["GF"] },
     ],
   },
   {
@@ -101,7 +101,7 @@ export default function SaborLatinoPage() {
             Menu
           </h2>
           <p style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "0.85rem", color: "#3D4D4D", margin: "-0.5rem 0 1rem" }}>
-            <span style={tagStyle}>VG</span> vegan · <span style={tagStyle}>GF</span> gluten-free · Allergies or dietary needs? Ask us before ordering.
+            <span style={tagStyle}>VG</span> vegan · <span style={tagStyle}>GF</span> gluten-free · Prepared in a kitchen that also handles gluten & nuts. Allergies? Ask us before ordering.
           </p>
           <div style={{
             display: "grid",
